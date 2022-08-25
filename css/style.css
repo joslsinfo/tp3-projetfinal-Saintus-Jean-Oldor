@@ -108,11 +108,11 @@ form {
 }
 
 .form-control::-moz-placeholder {
-  color: #2C3E50;
+  color: #fc833c;
 }
 
 .form-control::placeholder {
-  color: #2C3E50;
+  color: #fc833c;
 }
 
 .formButton {
