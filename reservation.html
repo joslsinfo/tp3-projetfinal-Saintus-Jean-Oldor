@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="Page de réservation du site web multi pages responsive JOS-COWORKING">
+  <title>Réservation </title>
+  <link rel="shorcut icon" href="logofavicon-jos-coworking-black-bg.png">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+  <!-- <script defer src="https://kit.fontawesome.com/98a89bc5a3.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+</head>
+
+<body>
+  <!-- En-tête de page -->
+
+  <!-- En-tête de page de la navigation-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./images/jos-coworking-black-bg.png" alt="logo"> </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-primary"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="reservation.html"><i class="fas fa-ticket"></i> Réservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="details.html"><i class="fas fa-list"></i> Détails</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="liste.html"><i class="fas fa-list"></i> Liste</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  btn btn-success" href="inscription.html"><span
+                  class="nav-link__item2">Inscription</span> <span class="nav-link__item">gratuite</span></a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Corps de page -->
+  <main>
+    <section id="sec1">
+      <div class="container">
+
+        <h1>Réservation</h1>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11172.545557783984!2d-73.77457826044922!3d45.56769580000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc923e992cfae9d%3A0xa39ae52b0776129d!2sRegus!5e0!3m2!1sen!2sca!4v1660356292594!5m2!1sen!2sca"
+          width="1200" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row">
+
+          <div class="col-12 col-sm-12 col-xl-12">
+            <form id="form" action="confirmation.html" onsubmit="return validateForm()">
+              <h2 class="form__title">Formulaire de réservation</h2>
+
+
+              <div class="form__manage">
+                <div class="form__input-control">
+                  <label for="nomInput"> Nom :</label>
+                  <input id="nomInput" name="nomInput" type="text" aria-label="nom" placeholder="Nom de famille" />
+                  <div class="errorMessage"></div>
+
+                </div>
+
+                <div class="form__input-control">
+                  <label for="prenomInput"> Prénom :</label>
+                  <input id="prenomInput" name="prenomInput" type="text" aria-label="prenom" placeholder="Prénom" />
+                  <div class="errorMessage"></div>
+                </div>
+              </div>
+
+              <div class="form__manage">
+                <div class="form__input-control">
+                  <label for="phoneInput"> Téléphone :</label>
+                  <input id="phoneInput" name="phoneInput" type="tel" aria-label="téléphone" placeholder="Téléphone" />
+                  <div class="errorMessage"></div>
+                </div>
+
+                <div class="form__input-control">
+                  <label for="courrielInput"> Courriel :</label>
+                  <input id="courrielInput" name="courrielInput" type="email" aria-label="courriel"
+                    placeholder="xxxx@mail.com" />
+                  <div class="errorMessage"></div>
+                </div>
+              </div>
+
+              <div class="form__manage">
+                <div class="form__input-control">
+                  <label for="passwordInput"> Mot de passe :</label>
+                  <input id="passwordInput" name="passwordInput" type="password" aria-label="password"
+                    placeholder="Password" />
+                  <div class="errorMessage"></div>
+                </div>
+
+                <div class="form__input-control">
+                  <label for="passwordConfirmationInput">Confirmer votre password:
+                  </label>
+                  <input id="passwordConfirmationInput" name="passwordConfirmationInput" type="password"
+                    aria-label="confirmation password" placeholder="Confirmation password" />
+                  <div class="errorMessage"></div>
+                </div>
+              </div>
+
+              <div class="form__manage">
+                <div class="form__input-control">
+                  <label for="messageTextInput"> Message :</label>
+                  <textarea id="messageTextInput" name="messageTextInput" rows="4" cols="50"
+                    placeholder="Saisir votre message"></textarea>
+
+                  <div class="errorMessage"></div>
+                </div>
+              </div>
+
+              <div class="form__manage">
+                <div class="form__input-control">
+                  <label class="info-lettre" for="infoLettreInput"> S'inscrire à l'infolettre :</label>
+                  <input id="infoLettreInput" name="infoLettreInput" type="checkbox" />
+                  <div class="errorMessage"></div>
+                </div>
+
+              </div>
+
+              <input type="submit" name="submit" id="submit" />
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+
+    <section>
+      <div class="container">
+        <h2></h2>
+        <div class="row mb-2 pt-2 gx-3 gy-3">
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 1 de la colonne 1 -->
+            <div class="card card-img">
+
+              <img src="./images/img8.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 2 de la colonne 2 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker21.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 3 de la colonne 3 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker16.jpg" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 4 de la colonne 4 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker27.png" alt="image card">
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row mb-2 pt-2 gx-3 gy-3">
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 1 de la colonne 1 -->
+            <div class="card card-img">
+
+              <img src="./images/img-coworker34.jpg" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 2 de la colonne 2 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker40.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 3 de la colonne 3 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker191919.jpg" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 4 de la colonne 4 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker3939.jpg" alt="image card">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mb-2 pt-2 gx-3 gy-3">
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 1 de la colonne 1 -->
+            <div class="card card-img">
+
+              <img src="./images/img-espace-partage.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 2 de la colonne 2 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker37.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 3 de la colonne 3 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker20.jpg" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 4 de la colonne 4 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker14.jpg" alt="image card">
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row mb-2 pt-2 gx-3 gy-3">
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 1 de la colonne 1 -->
+            <div class="card card-img">
+
+              <img src="./images/img5.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 2 de la colonne 2 -->
+            <div class="card card-img">
+              <img src="./images/img6.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 3 de la colonne 3 -->
+            <div class="card card-img">
+              <img src="./images/img13.JPG" alt="image card">
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-6 col-xl-3">
+            <!-- Partie 4 de la colonne 4 -->
+            <div class="card card-img">
+              <img src="./images/img-coworker14.jpg" alt="image card">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!-- Pieds de page -->
+  <footer class="footer">
+    <div class="infos container">
+      <span class="footer__identite"> Réalisé par Saintus Jean Oldor &copy; <script>
+          document.write(new Date().getFullYear());
+        </script> </span>
+
+      <span class="social-network">
+        <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://www.instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+        <a href="https://www.youtube.com" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
+      </span>
+
+      <span class="footer__para"> Cégep de Trois-Rivières </span>
+    </div>
+
+    <ul class="nav justify-content-center pb-4">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reservation.html">Réservation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="details.html">Détails</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="liste.html">Liste</a>
+      </li>
+    </ul>
+
+  </footer>
+
+  <script src="js/validation.js"></script>
+  <script src="bootstrap-5.2.0/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

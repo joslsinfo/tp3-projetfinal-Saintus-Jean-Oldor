@@ -1,0 +1,688 @@
+@use "variables";
+@use "page-inscription";
+
+// @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// font-family: 'Dosis', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Nova Round', cursive;
+// font-family: 'Red Hat Display', sans-serif;
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,800&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
+
+@import "../bootstrap-5.2.0/scss/bootstrap";
+
+
+
+
+
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+// ===============================
+
+.confirmation-title {
+  display: none;
+}
+
+.confirmation-message{
+  color:variables.$color-green;
+  text-align: center;
+  border: 3px solid variables.$color-green;
+  width: 50%;
+  margin: 1rem auto;
+  height: 50px;
+  padding: 50px;
+  border-radius: 20px/50px;
+  animation: clignote 5s linear infinite;
+ 
+  @keyframes clignote {  
+    50% { opacity: 0.3; }
+  }
+}
+// ===============================
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  // font-family: 'Roboto', sans-serif;
+
+  line-height: 1.5;
+  font-size: 1.1rem;
+  background-color:variables.$color-white;
+  color: variables.$color-black;
+
+}
+
+.navbar-brand img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    
+}
+
+
+
+.navbar{
+    background-color:variables.$color-white;
+     font-family: 'Open Sans', sans-serif;
+}
+
+// .nav__title {
+//     color:variables.$color-green;
+//     font-family: 'Roboto', sans-serif;
+//     display:none;
+//     // font-family: 'Open Sans', sans-serif;
+
+// }
+
+/*----------------------------------------*/
+// test pour animer le titre h1
+.title{
+  width:60%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 1rem;
+  -webkit-text-stroke: 1px variables.$color-green;
+  background: url('/images/img-pattern11.png');
+  // background-color: variables.$color-green;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: animate 45s linear 1s infinite alternate;
+
+}
+
+@keyframes animate {
+  100% {
+    background-position: -600px 0;
+  }
+}
+/*----------------------------------------*/
+
+.nav-link__item{
+    color:variables.$color-green;
+    padding: 3px;
+    background-color:variables.$color-white;
+    font-weight: 600;
+    font-size: 16px;
+   
+
+}
+.nav-link__item2{
+    color: variables.$color-white;
+    font-size: 16px;
+
+
+}
+.nav-link{
+    position:relative;
+    // font-family: 'Roboto', sans-serif;
+ 
+    font-size: 16px;
+
+
+    &:hover{
+        color: variables.$color-green;
+     
+    }
+
+  
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: variables.$color-green;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px; 
+        transition: 0.3s;
+        
+    }
+
+    &:hover:after{
+        width:100%;
+      
+    }
+
+   
+}
+
+
+
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+  color: variables.$color-black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btnLogo-disable {
+  cursor: default;
+  cursor: none!important;
+  pointer-events: none!important;
+  text-decoration: underline;
+  /* text-decoration: none; */
+  
+}
+
+.slogan{
+  text-align: center;
+  font-size: 0.8rem;
+
+  strong{
+    color:variables.$color-orange;
+  }
+
+
+}
+
+
+/*-----------------Corps de la page-------------------------------------*/
+
+.w-100{
+  width:100% !important;
+  height: 75vh;
+}
+
+.liste{
+   
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1px;
+    color: variables.$color-green;
+    font-size: 1rem;
+}
+
+.liste__elem {
+    list-style-type: none;
+    font-size: 1rem;
+   
+  
+}
+
+.liste__elem a {
+    text-decoration: none;
+    color: variables.$color-blue;
+
+    &:hover{
+       border-bottom: 1px solid variables.$color-green;
+       opacity: 0.8;
+       transition: all 0.3s;
+       cursor: pointer;
+       
+           
+           
+    }
+}
+// ----------------------------
+
+.paraListe{
+    color: variables.$color-black;
+    cursor: pointer;
+   display: inline-block;
+   margin: 0.5rem;
+   padding-left: 0.5rem;
+
+
+
+}
+// ----------------------------------
+
+.nav-item .btn-success{
+    background-color:variables.$color-green;
+    // max-width:240px;
+    
+}
+
+.row__title{
+    font-size: 1.3rem;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.para i {
+        margin: auto 1rem auto 0;
+        color: variables.$color-green;
+            
+    }
+
+    .text-title{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+
+
+.img-wifi {
+    width:100px;
+  
+}
+
+.icon-video  {
+    color: variables.$color-green;
+    padding: 1rem;
+      
+}
+
+.img-card{
+    width:100px;
+    float: right;
+   
+   
+}
+
+.card-comments{
+    background-color:variables.$color-gray;
+    color: variables.$color-white;
+    .card__commentaires{
+        font-weight: bold;
+        display: flex;
+        justify-content:space-between;
+       
+    }
+
+    p{
+      color: variables.$color-white;
+    }
+  
+ 
+}
+
+.card-img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  // object-fit: cover;
+
+  // grid-auto-flow: dense;
+  // overflow: hidden;
+
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px variables.$color-gray;
+    gap: 20px;
+    z-index: 5;
+  }
+
+
+}
+
+.btn-link {
+  @extend .btn-success;
+  text-decoration: none;
+  color: variables.$color-green;
+  // font-size: 1rem !important;
+  // padding: 0 !important;
+
+
+
+  &:hover{
+    color: variables.$color-white!important;
+    // padding: 0.3rem 1rem !important;
+  }
+}
+
+
+.btn-text{
+  font-size: 15px;
+}
+
+/*-----------------Page Détails--------------------*/
+
+.navbar-liste a{
+  @extend .nav-link;
+  &:hover{
+    color: variables.$color-orange;
+  }
+
+  &::after{
+    background-color: variables.$color-orange;
+  }
+  
+}
+
+.table__para{
+  font-weight: 200;
+}
+
+.table__text {
+  background-color: variables.$color-orange-lighten !important;
+  color: variables.$color-orange!important;
+  text-align:center;
+  vertical-align: middle;
+}
+
+.card__content{
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+
+  h2{
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+}
+
+.card__social{
+  // margin: 0 auto;
+display:flex;
+justify-content:space-around;
+align-items:center;
+
+}
+
+
+/*------------------------------------------------*/
+
+/*-------------------Formulaire réservation------------------- */
+
+#sec1{
+    position: relative;
+  
+    iframe{
+      width:100%;
+      margin-top: 1rem;
+    
+    
+    }
+  }
+  
+  #form{
+    position: absolute;
+    // width: 45%;
+    left: 35%;
+    top: 10%;
+    background-color: variables.$color-white;
+    z-index: 10;
+    border: 1px solid variables.$color-green;
+    
+  }
+  
+  .form__title{
+    text-align: center;
+    color:variables.$color-footer;
+    font-weight: bold;
+  
+  }
+
+
+  
+  .form__input-control {
+    display: flex;
+    flex-direction: column;
+    // background-color: variables.$color-white;
+    margin: 0 2rem 0 2rem;
+    
+  }
+  
+  .form__input-control input {
+    border: 1px solid variables.$color-footer;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    // margin: 0 auto;
+    margin: 0 1rem 0 1rem;
+    color: variables.$color-footer;
+
+
+  
+ 
+  }
+
+  textarea {
+    width:100%;
+    // margin: 0 1.5rem 0 1rem;
+    margin:0 1.1rem;
+    padding: 10px ;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    resize:none;
+   
+}
+
+
+
+  
+  label{
+    
+    display:none;
+  }
+
+ 
+
+   
+ 
+  
+  
+  .form__input-control input:focus, textarea:focus {
+    outline: 0;
+  
+    
+  }
+  
+  .form__input-control.success input {
+    border-color: variables.$color-green;
+  }
+  
+  .form__input-control.success textarea {
+    border-color: variables.$color-green;
+  }
+  
+  .form__input-control.error input {
+    border-color: variables.$color-red;
+  }
+  
+  .form__input-control.error textarea {
+    border-color: variables.$color-red;
+  }
+  
+  
+  .form__input-control .errorMessage {
+    color: variables.$color-red;
+    font-size: 10px;
+    height: 15px;
+    margin-left: 1rem;
+  }
+
+  .info-lettre{
+    display: block !important;
+  }
+  
+ 
+  
+  #submit {
+    margin: 0.5rem 25% 1rem 25%;
+    padding: 0.5rem 20%;
+    color: variables.$color-white;
+    background-color: variables.$color-green;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+    opacity: 1;
+    font-size: 1rem;
+
+  
+  &:hover{
+  
+    color: variables.$color-white;
+    background-color:variables.$color-green;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    box-shadow: 2px 3px 15px variables.$color-green;
+    transform: translateY(-5px);
+  
+  }
+  
+  }
+
+  
+  
+  @media screen and (max-width: 992px) {
+       
+        #form{
+          position: absolute;
+         display: inline-block;
+          left: 25%;
+          top: 12%;
+          width:60%;
+          background-color: variables.$color-white;
+          z-index: 10;
+          border: 1px solid variables.$color-green;
+          text-align: left;
+        }
+
+        iframe{
+          width:100%;
+        }
+
+
+    .form__manage{
+      display: flex;
+      align-items: center;
+    }
+
+      }
+      
+       
+  
+
+      @media screen and (max-width: 850px) {
+        
+        #form{
+          position: absolute;
+         display: inline-block;
+          left: 25%;
+          top: 5%;
+          width:50%;
+          background-color: variables.$color-white;
+          z-index: 10;
+          border: 1px solid variables.$color-green;
+          text-align: left;
+        }
+
+        iframe{
+          width:100%;
+        }
+
+
+    .form__manage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #messageTextInput {
+        width: 100%;
+      }
+      
+    }
+
+
+    .form__title{
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+}
+      
+       
+  
+/*------------------Media query page details----------*/
+
+@media screen and (max-width: 992px) {
+  .card__social{
+    display: none;
+  }
+
+
+}
+
+
+  /*------------------Pieds de page-----------------------------*/
+
+.footer{
+  background-color: variables.$color-footer;
+ 
+  
+
+  .nav-link{
+      color: variables.$color-white;
+
+  }
+
+  .footer__identite{
+      color: variables.$color-white;
+      padding:1rem;
+      margin: 0.7rem;
+      font-size: 0.8rem;
+
+  }
+
+  .footer__para{
+    color: variables.$color-white;
+    padding:1rem;
+    margin: 0.7rem 0 0.7 0;
+    font-size: 0.8rem;
+
+}
+
+  .infos{
+      display:flex;
+      justify-content: space-between;
+    
+  }
+  .social-network{
+      justify-content: space-between;
+
+      i{
+
+          color: variables.$color-white;
+          padding: 1rem;
+          margin: 0.3rem 0 0 0;
+      
+      }
+      & i:hover  {
+          color: variables.$color-green;
+          background-color: variables.$color-white;
+          transition: all 0.3s ease-in-out;
+          // font-size: 1rem;
+       
+          margin: 0.3rem 0 0 0;
+        
+  
+      }
+  }
+
+}
+
+
+
+
+
+
