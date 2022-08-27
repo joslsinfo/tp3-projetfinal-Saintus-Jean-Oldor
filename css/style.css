@@ -485,9 +485,11 @@ table i {
 
 button.btn {
   color: #00874e;
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: #F7F5F7;
   margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
   transition: all 0.4s ease-in-out;
 }
 button.btn:hover {
@@ -509,12 +511,13 @@ button.btn:hover {
 }
 
 .form-wrapper .card {
-  width: 32%;
-  padding: 20px;
+  width: 50%;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.35);
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
+  margin-right: 1rem;
 }
 
 .card.show {
@@ -537,9 +540,9 @@ button.btn:hover {
 .card-header .form-header {
   flex: 50%;
   text-align: center;
-  padding: 10px 0;
+  padding: 8px 0;
   border: 1px solid transparent;
-  border-radius: 50px;
+  border-radius: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -595,7 +598,8 @@ form {
   background-color: #00d47a;
   border-radius: 50px;
   margin-top: 1rem;
-  font-size: 1rem;
+  margin-right: 1rem;
+  font-size: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .formButton:hover {
@@ -629,6 +633,15 @@ form {
 }
 
 /* ---------------------Media query------------------------------*/
+@media screen and (max-width: 767px) {
+  #forLogin, #forRegister {
+    font-size: 14px;
+    padding: 1rem;
+  }
+  .formButton {
+    margin-right: 2.5rem;
+  }
+}
 .confirmation-title {
   display: none;
 }

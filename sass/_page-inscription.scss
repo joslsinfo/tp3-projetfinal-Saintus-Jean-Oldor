@@ -49,9 +49,11 @@
 
 button.btn{
     color: variables.$color-green;
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: variables.$color-white;
     margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
     transition: all 0.4s ease-in-out;
 
     &:hover {
@@ -70,6 +72,7 @@ button.btn{
     align-items: center;
     // margin: 50px 0;
     // margin: 1rem 0;
+    
 }
 
 .form-wrapper {
@@ -81,18 +84,20 @@ button.btn{
 
 .form-wrapper .card {
     // width: 360px;
-    width:32%;
-    padding: 20px;
+    width:50%;
+    padding: 15px;
     background-color: variables.$color-rgb1;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
+    margin-right:1rem;
 
 }
 
 .card.show{
     visibility: visible;
     opacity: 1;
+    // width:32%;
 
 }
 
@@ -114,9 +119,9 @@ button.btn{
 .card-header .form-header{
     flex: 50%;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
     border: 1px solid transparent;
-    border-radius: 50px;
+    border-radius: 20px;
     user-select: none;
     cursor: pointer;
 
@@ -185,7 +190,8 @@ form {
     background-color: variables.$color-lighten;
     border-radius: 50px;
     margin-top: 1rem;
-    font-size: 1rem;
+    margin-right: 1rem;
+    font-size: 12px;
     transition: transform .3s, box-shadow .3s;
 
     &:hover {
@@ -231,5 +237,32 @@ form {
   }
 
 /* ---------------------Media query------------------------------*/
+
+
+
+@media screen and (max-width: 767px) {
+
+
+
+   #forLogin, #forRegister{
+  font-size: 14px;
+  padding: 1rem;
+  
+   }
+
+
+   .formButton{
+    margin-right: 2.5rem;
+
+   }
+}
+
+
+
+   
+    
+
+
+
 
 
