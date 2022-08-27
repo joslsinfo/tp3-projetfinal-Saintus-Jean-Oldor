@@ -479,6 +479,10 @@ table i {
   font-size: 8px;
 }
 
+.sec-title {
+  display: none;
+}
+
 .sec-container {
   position: relative;
   height: 100vh;

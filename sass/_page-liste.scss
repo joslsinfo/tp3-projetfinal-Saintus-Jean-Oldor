@@ -19,3 +19,8 @@
     @include change(variables.$color-white, variables.$color-orange, variables.$pad, variables.$mag);
     font-size: 8px;
    }
+
+
+   .sec-title{
+    display: none;
+   }
