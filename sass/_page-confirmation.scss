@@ -1,0 +1,26 @@
+
+@use "variables";
+@use "general";
+// ===============================
+
+.confirmation-title {
+    display: none;
+  }
+  
+  .confirmation-message{
+    color:variables.$color-green;
+    text-align: center;
+    border: 3px solid variables.$color-green;
+    width: 50%;
+    margin: 1rem auto;
+    height: 50px;
+    padding: 50px;
+    border-radius: 20px/50px;
+    animation: clignote 5s linear infinite;
+   
+    @keyframes clignote {  
+      50% { opacity: 0.3; }
+    }
+  }
+  // ===============================
+  

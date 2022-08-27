@@ -1,0 +1,283 @@
+@use "variables";
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  // font-family: 'Roboto', sans-serif;
+
+  line-height: 1.5;
+  font-size: 1.1rem;
+  background-color:variables.$color-white;
+  color: variables.$color-black;
+
+}
+
+.navbar-brand img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    
+}
+
+
+
+.navbar{
+    background-color:variables.$color-white;
+     font-family: 'Open Sans', sans-serif;
+}
+
+// .nav__title {
+//     color:variables.$color-green;
+//     font-family: 'Roboto', sans-serif;
+//     display:none;
+//     // font-family: 'Open Sans', sans-serif;
+
+// }
+
+/*----------------------------------------*/
+// test pour animer le titre h1
+.title{
+  width:60%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 1rem;
+  -webkit-text-stroke: 1px variables.$color-green;
+  background: url('/images/img-pattern11.png');
+  // background-color: variables.$color-green;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: animate 45s linear 1s infinite alternate;
+
+}
+
+@keyframes animate {
+  100% {
+    background-position: -600px 0;
+  }
+}
+/*----------------------------------------*/
+
+
+
+
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+  color: variables.$color-black;
+}
+
+hr{
+  color:variables.$color-orange;
+}
+a{
+    text-decoration: none;
+}
+
+.btnLogo-disable {
+  cursor: default;
+  cursor: none!important;
+  pointer-events: none!important;
+  text-decoration: underline;
+  /* text-decoration: none; */
+  
+}
+
+.slogan{
+  text-align: center;
+  font-size: 0.8rem;
+
+  strong{
+    color:variables.$color-orange;
+  }
+
+
+}
+
+
+/*-----------------Corps de la page-------------------------------------*/
+
+.w-100{
+  width:100% !important;
+  height: 75vh;
+}
+
+.liste{
+   
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1px;
+    color: variables.$color-green;
+    font-size: 1rem;
+}
+
+.liste__elem {
+    list-style-type: none;
+    font-size: 1rem;
+   
+  
+}
+
+.liste__elem a {
+    text-decoration: none;
+    color: variables.$color-blue;
+
+    &:hover{
+       border-bottom: 1px solid variables.$color-green;
+       opacity: 0.8;
+       transition: all 0.3s;
+       cursor: pointer;
+       
+           
+           
+    }
+}
+// ----------------------------
+
+.paraListe{
+    color: variables.$color-black;
+    cursor: pointer;
+   display: inline-block;
+   margin: 0.5rem;
+   padding-left: 0.5rem;
+
+
+
+}
+// ----------------------------------
+
+.nav-item .btn-success{
+    background-color:variables.$color-green;
+    // max-width:240px;
+    
+}
+
+.row__title{
+    font-size: 1.3rem;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.para i {
+        margin: auto 1rem auto 0;
+        color: variables.$color-green;
+            
+    }
+
+    .text-title{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+
+
+.img-wifi {
+    width:100px;
+  
+}
+
+.icon-video  {
+    color: variables.$color-green;
+    padding: 1rem;
+      
+}
+
+.img-card{
+    width:100px;
+    float: right;
+   
+   
+}
+
+.card-comments{
+    background-color:variables.$color-gray;
+    color: variables.$color-white;
+    .card__commentaires{
+        font-weight: bold;
+        display: flex;
+        justify-content:space-between;
+       
+    }
+
+    p{
+      color: variables.$color-white;
+    }
+  
+ 
+}
+
+.card-img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  // object-fit: cover;
+
+  // grid-auto-flow: dense;
+  // overflow: hidden;
+
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px variables.$color-gray;
+    gap: 20px;
+    z-index: 5;
+  }
+
+
+}
+
+.btn-link {
+  @extend .btn-success;
+  text-decoration: none;
+  color: variables.$color-green;
+  // font-size: 1rem !important;
+  // padding: 0 !important;
+
+
+
+  &:hover{
+    color: variables.$color-white!important;
+    // padding: 0.3rem 1rem !important;
+  }
+}
+
+
+.btn-text{
+  font-size: 15px;
+}
+
+
+
+/*------------------------------------------------*/
+
+
+       
+  
+/*------------------Media query page details----------*/
+
+@media screen and (max-width: 992px) {
+  .card__social{
+    display: none;
+  }
+
+
+}
+
+
+  

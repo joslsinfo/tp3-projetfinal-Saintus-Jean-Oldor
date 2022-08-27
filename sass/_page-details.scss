@@ -1,0 +1,67 @@
+@use "variables";
+@use "general";
+/*-----------------Page Détails--------------------*/
+
+.navbar-liste a{
+    // @extend .nav-link;
+    &:hover{
+      color: variables.$color-orange;
+    }
+  
+    &::after{
+      background-color: variables.$color-orange;
+    }
+    
+  }
+  
+  .table__para{
+    font-weight: 200;
+  }
+  
+  .table__text {
+    background-color: variables.$color-orange-lighten !important;
+    color: variables.$color-orange!important;
+    text-align:center;
+    vertical-align: middle;
+  }
+  
+  .card__content{
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  
+    h2{
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+  }
+  
+  .card__social{
+    // margin: 0 auto;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  font-size: 12px;
+  i{
+    color: variables.$color-orange;
+
+
+  }
+  
+  }
+
+  table {
+    font-size: 12px;
+    i{
+
+      color: variables.$color-orange;
+   
+    }
+  }
+
+  
+  
+
+  .card-body{
+    padding: 0!important;
+  }

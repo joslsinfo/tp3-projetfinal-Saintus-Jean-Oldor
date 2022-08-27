@@ -1,0 +1,53 @@
+@use "variables";
+@use "general";
+
+
+.nav-link__item{
+    color:variables.$color-green;
+    padding: 3px;
+    background-color:variables.$color-white;
+    font-weight: 600;
+    font-size: 16px;
+   
+
+}
+ .nav-link__item2{
+    color: variables.$color-white;
+    font-size: 16px;
+
+
+
+}
+.nav-link{
+    position:relative;
+    // font-family: 'Roboto', sans-serif;
+ 
+    font-size: 16px;
+
+
+    &:hover{
+        color: variables.$color-green;
+     
+    }
+
+  
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: variables.$color-green;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px; 
+        transition: 0.3s;
+        
+    }
+
+    &:hover:after{
+        width:100%;
+      
+    }
+
+   
+}

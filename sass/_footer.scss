@@ -1,0 +1,59 @@
+@use "variables";
+@use "general";
+/*------------------Pieds de page-----------------------------*/
+
+.footer{
+    background-color: variables.$color-footer;
+   
+    
+  
+    .nav-link{
+        color: variables.$color-white;
+  
+    }
+  
+    .footer__identite{
+        color: variables.$color-white;
+        padding:1rem;
+        margin: 0.7rem;
+        font-size: 0.8rem;
+  
+    }
+  
+    .footer__para{
+      color: variables.$color-white;
+      padding:1rem;
+      margin: 0.7rem 0 0.7 0;
+      font-size: 0.8rem;
+  
+  }
+  
+    .infos{
+        display:flex;
+        justify-content: space-between;
+      
+    }
+    .social-network{
+        justify-content: space-between;
+  
+        i{
+  
+            color: variables.$color-white;
+            padding: 1rem;
+            margin: 0.3rem 0 0 0;
+        
+        }
+        & i:hover  {
+            color: variables.$color-green;
+            background-color: variables.$color-white;
+            transition: all 0.3s ease-in-out;
+            // font-size: 1rem;
+         
+            margin: 0.3rem 0 0 0;
+          
+    
+        }
+    }
+  
+  }
+  

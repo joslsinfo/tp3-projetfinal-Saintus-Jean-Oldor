@@ -1,0 +1,21 @@
+@use "variables";
+@use "general";
+
+
+
+@mixin change ($color, $bg-color, $pad, $mag){
+    color: $color;
+    background-color: $bg-color;
+    padding: $pad;
+    margin: $mag;
+}
+
+.card__item{
+ @include change(variables.$color-white, variables.$color-green, variables.$pad, variables.$mag);
+ font-size: 8px;
+}
+
+.card__item2{
+    @include change(variables.$color-white, variables.$color-orange, variables.$pad, variables.$mag);
+    font-size: 8px;
+   }

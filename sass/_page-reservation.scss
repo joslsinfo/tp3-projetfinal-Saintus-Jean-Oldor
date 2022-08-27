@@ -1,0 +1,235 @@
+@use "variables";
+@use "general";
+/*-------------------Formulaire réservation------------------- */
+
+#sec1{
+    position: relative;
+  
+    iframe{
+      width:100%;
+      margin-top: 1rem;
+    
+    
+    }
+  }
+  
+  #form{
+    position: absolute;
+    // width: 45%;
+    left: 35%;
+    top: 10%;
+    background-color: variables.$color-white;
+    z-index: 10;
+    border: 1px solid variables.$color-green;
+    
+  }
+  
+  .form__title{
+    text-align: center;
+    color:variables.$color-footer;
+    font-weight: bold;
+  
+  }
+
+
+  
+  .form__input-control {
+    display: flex;
+    flex-direction: column;
+    // background-color: variables.$color-white;
+    margin: 0 2rem 0 2rem;
+    
+  }
+  
+  .form__input-control input {
+    border: 1px solid variables.$color-footer;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    // margin: 0 auto;
+    // margin: 0 3rem 0 1rem;
+    color: variables.$color-footer;
+
+
+  
+ 
+  }
+
+  textarea {
+    width:100%;
+    // margin: 0 1.5rem 0 1rem;
+    // margin:0 1.1rem;
+    padding: 10px ;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    resize:none;
+   
+}
+
+
+
+  
+  label{
+    
+    display:none;
+  }
+
+ 
+
+   
+ 
+  
+  
+  .form__input-control input:focus, textarea:focus {
+    outline: 0;
+  
+    
+  }
+  
+  .form__input-control.success input {
+    border-color: variables.$color-green;
+  }
+  
+  .form__input-control.success textarea {
+    border-color: variables.$color-green;
+  }
+  
+  .form__input-control.error input {
+    border-color: variables.$color-red;
+  }
+  
+  .form__input-control.error textarea {
+    border-color: variables.$color-red;
+  }
+  
+  
+  .form__input-control .errorMessage {
+    color: variables.$color-red;
+    font-size: 10px;
+    height: 15px;
+    margin-left: 1rem;
+  }
+
+  .info-lettre{
+    display: block !important;
+  }
+  
+ 
+  
+  #submit {
+    margin: 0.5rem 25% 1rem 25%;
+    padding: 0.5rem 20%;
+    color: variables.$color-white;
+    background-color: variables.$color-green;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+    opacity: 1;
+    font-size: 1rem;
+
+  
+  &:hover{
+  
+    color: variables.$color-white;
+    background-color:variables.$color-green;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    box-shadow: 2px 3px 15px variables.$color-green;
+    transform: translateY(-5px);
+  
+  }
+  
+  }
+
+  
+  
+  @media screen and (max-width: 992px) {
+       
+        #form{
+          position: absolute;
+         display: inline-block;
+          left: 25%;
+          top: 12%;
+          width:60%;
+          background-color: variables.$color-white;
+          z-index: 10;
+          border: 1px solid variables.$color-green;
+          text-align: left;
+        }
+
+        iframe{
+          width:100%;
+          // background-color:variables.$color-white
+        }
+
+
+    .form__manage{
+      display: flex;
+      align-items: center;
+    }
+
+      }
+      
+       
+  
+
+      @media screen and (max-width: 850px) {
+        
+        #form{
+          position: absolute;
+         display: inline-block;
+          left: 25%;
+          top: 5%;
+          width:50%;
+          background-color: variables.$color-white;
+          z-index: 10;
+          border: 1px solid variables.$color-green;
+          text-align: left;
+        }
+
+        iframe{
+          width:100%;
+        }
+
+
+    .form__manage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #messageTextInput {
+        width: 100%;
+      }
+      
+    }
+
+
+    .form__title{
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+}
+      
+.row__info{
+    text-align:center;
+    background-color: variables.$color-white;
+p{
+  color: variables.$color-footer;
+  a{
+    color: variables.$color-footer;
+
+    &:hover{
+      color:variables.$color-green;
+    }
+  }
+
+  i{
+    color: variables.$color-orange;
+  }
+}
+
+}
