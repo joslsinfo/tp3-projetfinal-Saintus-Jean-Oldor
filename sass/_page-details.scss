@@ -2,6 +2,12 @@
 @use "general";
 /*-----------------Page Détails--------------------*/
 
+.sec-sous-menu{
+  display:none;
+
+}
+
+
 .navbar-liste a{
     // @extend .nav-link;
     &:hover{

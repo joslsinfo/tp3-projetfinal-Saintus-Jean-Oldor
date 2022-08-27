@@ -190,6 +190,7 @@ a {
 .btn-link {
   text-decoration: none;
   color: #00874e;
+  padding: 1rem;
 }
 .btn-link:hover {
   color: #F7F5F7 !important;
@@ -410,6 +411,10 @@ label {
 }
 
 /*-----------------Page Détails--------------------*/
+.sec-sous-menu {
+  display: none;
+}
+
 .navbar-liste a:hover {
   color: #fc833c;
 }
@@ -571,17 +576,6 @@ form {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
-}
-
-.form {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid rgba(134, 255, 249, 0.65);
-  background: none;
-  outline: none;
-  padding: 10px 5px;
-  margin-bottom: 20px;
-  color: #F7F5F7;
 }
 
 .form-control::-moz-placeholder {
