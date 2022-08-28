@@ -67,7 +67,29 @@
         </div>
       </div>
     </nav>
+
+
+<!-- ======================================= -->
+<script>
+  //  Register service worker.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then((reg) => {
+          console.log('Service worker registered. Notre service worker est chargé !', reg);
+        });
+    });
+  }
+</script>
+<!-- ======================================= -->
+
+</header>
+
+
+
   </header>
+
+
   <!-- Corps de page -->
   <main>
 
