@@ -25,7 +25,7 @@ self.addEventListener('install', (evt) => {
 
 
 
-/**Ces lignes de codes permettent de vider la cache actuelle pour une nouvelle cache si les noms de cahes est différent 
+/**Ces lignes de codes permettent de vider la cache actuelle pour une nouvelle cache si les noms de cahes sont différents 
  * Sinon, ca va garder en mémoire l'ancienne cache qui pourrait empécher que le site fonctionne correctement.
  * Alors, il faut toujours changer la version de la cache pour que ca prenne en compte les nouvelles modifications des informations faites dans les fichiers du site web.
 */
