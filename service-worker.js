@@ -3,7 +3,8 @@ const CACHE_NAME = 'static-cache-v9';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
     'offline.html',
-    'index.html'
+    'index.html',
+    'images/jos-coworking-black-bg.png'
    
 
 ];
