@@ -1,51 +1,23 @@
 @use "variables";
 @use "general";
-// *,
-// *::before,
-// *::after {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-//     outline:none;
-//     font-family: "Open Sans", sans-serif;
-// }
+
+
+
 
 .sec-container{
     position: relative;
     height:100vh;
     width:100%;
-    // padding: 0 8%;
-    // background: linear-gradient(rgba(0, 0, 0, .4), transparent), url('../images/bg-img.jpg') center center no-repeat;
-     background: linear-gradient(rgba(0, 0, 0, .4), transparent), url('../images/img-coworker19.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .4), transparent), url('../images/img-coworker19.jpg') center center no-repeat;
     color: variables.$color-white;
-    // background: url(/images/bg-img.jpg);
-    // background: linear-gradient(rgba(0, 0, 0, 0.4));
-    // background-position: center center;
-    // background-repeat: no-repeat;
+    
     background-size: cover;
-    // background-color: variables.$color-white;
+   
 
 
 }
 
-// button.btn{
-//     padding: 10px 20px;
-//     font-size: 1.2rem;
-//     font-weight: bold;
-//     font-style: italic;
-//     margin-top: 0;
-//     background-color: transparent;
-//     color: #94f7e6;
-//     border: 1px solid transparent;
-//     transition: border-color .3s;
 
-//     &:hover{
-//         border-color: #94f7e6;
-    
-//     }
-    
-
-// }
 
 button.btn{
     color: variables.$color-green;
@@ -70,9 +42,7 @@ button.btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin: 50px 0;
-    // margin: 1rem 0;
-    
+
 }
 
 .form-wrapper {
@@ -83,7 +53,7 @@ button.btn{
 }
 
 .form-wrapper .card {
-    // width: 360px;
+  
     width:50%;
     padding: 15px;
     background-color: variables.$color-rgb1;
@@ -97,7 +67,7 @@ button.btn{
 .card.show{
     visibility: visible;
     opacity: 1;
-    // width:32%;
+ 
 
 }
 
@@ -107,9 +77,9 @@ button.btn{
     align-items: center;
     margin: 10px 5px 0;
     font-size: 1rem;
-    // color: #94f7e6;
+
     color: variables.$color-green;
-    // box-shadow: 2px 3x 8px #d3f7ff71;
+  
     box-shadow: 2px 3x 8px variables.$color-gray;
     border-radius: 50px;
     padding: 2rem;
@@ -129,9 +99,9 @@ button.btn{
 
 
 .card-header .form-header.active{
-    // box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%),  inset -1px 1px 2px rgb(19 210 177 / 55%), inset -1px -1px 2px rgb(19 210 177 / 55%), inset 1px -1px 2px rgb(19 210 177 / 55%);
+    
     box-shadow: inset 1px 1px 2px variables.$color-rgb2,  inset -1px 1px 2px variables.$color-rgb2, inset -1px -1px 2px variables.$color-rgb2, inset 1px -1px 2px variables.$color-rgb2;
-    // border-color: #94f7e6;
+ 
     border-color: variables.$color-lighten;
     transition: border-color 0.3s, box-shadow 0.3s;
  
@@ -144,7 +114,7 @@ button.btn{
     flex-wrap: nowrap;
     padding: 40px 0;
     text-align: center;
-    // margin: 1rem 0;
+  
 
 }
 form {
@@ -159,25 +129,11 @@ form {
     transition: opacity .3s, visibility 0.3s;
 }
 
-// .form {
-//     width: 100%;
-//     border: none;
-//     // border-bottom: 1px solid rgb(134 255 249 /65%);
-//     border-bottom: 1px solid variables.$color-rgb3;
-//     background: none;
-//     outline: none;
-//     padding: 10px 5px;
-//     margin-bottom: 20px;
-//     // color: #fff;
-//     color: variables.$color-white;
 
-// }
 
 
 
 .form-control::placeholder {
-//    color: rgb(134 255 249 /65%);
-//    color: variables.$color-rgb3
    color: variables.$color-orange;
 
 
@@ -186,7 +142,7 @@ form {
 .formButton{
     border: 1px solid transparent;
     padding: 1rem 3rem;
-    // background-color: #94f7e6;
+
     background-color: variables.$color-lighten;
     border-radius: 50px;
     margin-top: 1rem;
@@ -195,7 +151,7 @@ form {
     transition: transform .3s, box-shadow .3s;
 
     &:hover {
-        // box-shadow: 3px 5px 15px #94f7e6;
+       
         box-shadow: 3px 5px 15px variables.$color-lighten;
         transform: translateY(-5px);
         color: variables.$color-white;
