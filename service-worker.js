@@ -4,7 +4,8 @@ const CACHE_NAME = 'static-cache-v5';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
-    'logofavicon-jos-coworking-black-bg.png'
+    '/images/jos-coworking-black-bg.png'
+    
 ];
 
 
