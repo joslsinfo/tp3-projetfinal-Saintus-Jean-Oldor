@@ -5,7 +5,7 @@ const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
     '/images/jos-coworking-black-bg.png'
-    
+
 ];
 
 
@@ -15,37 +15,37 @@ self.addEventListener('install', (evt) => {
     console.log('[ServiceWorker] Install');
     // Precache static resources here.
     evt.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-    console.log('[ServiceWorker] Pre-caching offline page');
-    return cache.addAll(FILES_TO_CACHE);
-    })
+        caches.open(CACHE_NAME).then((cache) => {
+            console.log('[ServiceWorker] Pre-caching offline page');
+            return cache.addAll(FILES_TO_CACHE);
+        })
     );
     self.skipWaiting();
-   });
+});
 
 
 
 /**Ces lignes de codes permettent de vider la cache actuelle pour une nouvelle cache si les noms de cahes sont différents 
  * Sinon, ca va garder en mémoire l'ancienne cache qui pourrait empécher que le site fonctionne correctement.
  * Alors, il faut toujours changer la version de la cache pour que ca prenne en compte les nouvelles modifications des informations faites dans les fichiers du site web.
-*/
+ */
 
-   self.addEventListener('activate', (evt) => {
+self.addEventListener('activate', (evt) => {
     console.log('[ServiceWorker] Activate');
     //Remove previous cached data from disk.
     evt.waitUntil(
-    caches.keys().then((keyList) => {
-    return Promise.all(keyList.map((key) => {
-    if (key !== CACHE_NAME) {
-    console.log('[ServiceWorker] Removing old cache',
-   key);
-    return caches.delete(key);
-    }
-    }));
-    })
+        caches.keys().then((keyList) => {
+            return Promise.all(keyList.map((key) => {
+                if (key !== CACHE_NAME) {
+                    console.log('[ServiceWorker] Removing old cache',
+                        key);
+                    return caches.delete(key);
+                }
+            }));
+        })
     );
     self.clients.claim();
-   });
+});
 
 
 /** Gestion de la perte de connexion
@@ -54,20 +54,20 @@ self.addEventListener('install', (evt) => {
  * si jamais on n'est pas en train de naviguer et il y a un problème avec l'événement fetch, va ouvrir la cache qui porte le nom de la version actuelle, puis
  * va chercher le fichier qui est dans cache.match('/TP3-Saintus-Jean-Oldor/offline.html' ), car il n'y a plus de connexion d'internet. Dans ce cas-ci c'est offline.html, mais ça peut être un autre fichier
  * */
-   self.addEventListener('fetch', (evt) => {
+self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
     //Add fetch event handler here.
     if (evt.request.mode !== 'navigate') {
-    // Not a page navigation, bail.
-    return;
+        // Not a page navigation, bail.
+        return;
     }
     evt.respondWith(
-    fetch(evt.request)
-    .catch(() => {
-    return caches.open(CACHE_NAME)
-    .then((cache) => {
-   return cache.match('offline.html' );
-    });
-    })
+        fetch(evt.request)
+        .catch(() => {
+            return caches.open(CACHE_NAME)
+                .then((cache) => {
+                    return cache.match('offline.html');
+                });
+        })
     );
-   });
+});
