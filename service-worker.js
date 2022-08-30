@@ -4,6 +4,11 @@ const CACHE_NAME = 'static-cache-v12';
 const FILES_TO_CACHE = [
     'offline.html',
     'index.html',
+    'reservation.html',
+    'details.html',
+    'liste.html',
+    'inscription.html',
+    'confirmation.html',
     'images/jos-coworking-black-bg.png'
    
 
