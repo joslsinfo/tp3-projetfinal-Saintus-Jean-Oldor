@@ -35,7 +35,7 @@ body {
   text-align: center;
   padding: 1rem;
   -webkit-text-stroke: 1px #00874e;
-  background: url("/images/img-pattern11.png");
+  background: url("./images/img-pattern11.png");
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -77,7 +77,6 @@ a {
   cursor: none !important;
   pointer-events: none !important;
   text-decoration: underline;
-  /* text-decoration: none; */
 }
 
 .slogan {
@@ -200,10 +199,17 @@ a {
   font-size: 15px;
 }
 
+.commentaires {
+  display: none;
+}
+
 /*------------------------------------------------*/
 /*------------------Media query page details----------*/
 @media screen and (max-width: 992px) {
   .card__social {
+    display: none;
+  }
+  .commentaires {
     display: none;
   }
 }
@@ -487,7 +493,7 @@ table i {
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("../images/img-coworker19.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("../images/img-coworker19.png") center center no-repeat;
   color: #F7F5F7;
   background-size: cover;
 }

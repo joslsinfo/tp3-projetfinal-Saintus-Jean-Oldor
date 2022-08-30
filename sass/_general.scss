@@ -11,8 +11,6 @@
 
 body{
   font-family: "Open Sans", sans-serif;
-  // font-family: 'Roboto', sans-serif;
-
   line-height: 1.5;
   font-size: 1.1rem;
   background-color:variables.$color-white;
@@ -34,16 +32,10 @@ body{
      font-family: 'Open Sans', sans-serif;
 }
 
-// .nav__title {
-//     color:variables.$color-green;
-//     font-family: 'Roboto', sans-serif;
-//     display:none;
-//     // font-family: 'Open Sans', sans-serif;
 
-// }
 
 /*----------------------------------------*/
-// test pour animer le titre h1
+
 .title{
   width:60%;
   margin: 0 auto;
@@ -54,7 +46,6 @@ body{
   padding: 1rem;
   -webkit-text-stroke: 1px variables.$color-green;
   background: url('./images/img-pattern11.png');
-  // background-color: variables.$color-green;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -93,7 +84,7 @@ a{
   cursor: none!important;
   pointer-events: none!important;
   text-decoration: underline;
-  /* text-decoration: none; */
+
   
 }
 
@@ -162,7 +153,7 @@ a{
 
 .nav-item .btn-success{
     background-color:variables.$color-green;
-    // max-width:240px;
+   
     
 }
 
