@@ -35,12 +35,15 @@
     }
     .social-network{
         justify-content: space-between;
+     
+
   
         i{
   
             color: variables.$color-white;
-            padding: 1rem;
+            padding: 0.5rem;
             margin: 0.3rem 0 0 0;
+         
         
         }
         & i:hover  {
@@ -51,7 +54,6 @@
          
             margin: 0.3rem 0 0 0;
           
-    
         }
     }
   
