@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v14';
+const CACHE_NAME = 'static-cache-v16';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
     'offline.html',
@@ -9,6 +9,26 @@ const FILES_TO_CACHE = [
     'liste.html',
     'inscription.html',
     'confirmation.html',
+    'logofavicon-jos-coworking-black-bg.png',
+    'images/jos-coworking-black-bg.png',
+    'images/img-flower.png',
+    'images/coworkers.jpg',
+    'images/img5.JPG',
+    'images/img4.JPG',
+    'images/img13.JPG',
+    'images/img14.JPG',
+    'images/img24.JPG',
+    'images/img25.JPG',
+    'images/img16.PNG',
+    'images/img15.JPG',
+    'images/image-worker.jpg',
+    'images/image-coworkers.jpg',
+    'images/image-co-workers2p.jpg',
+    'images/image-card1.jpg',
+    'images/image-coworkers.jpg',
+    'images/img-coworker11.jpg',
+    'images/coworker.jpg',
+    'images/img-coworker2222.jpg',
     'images/jos-coworking-black-bg.png'
    
 
