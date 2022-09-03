@@ -470,9 +470,15 @@ table i {
   padding: 0 !important;
 }
 
+/*-------------------Media queries--------------------------------*/
 @media screen and (max-width: 768px) {
-  .card__social i {
-    margin-left: 5px;
+  .card__social {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+  table tr td {
+    font-size: 10px;
+    padding: 8px;
   }
 }
 .card__item {
