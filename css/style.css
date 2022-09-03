@@ -481,6 +481,19 @@ table i {
     padding: 8px;
   }
 }
+@media screen and (max-width: 433px) {
+  .card__social {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+  table tr td {
+    font-size: 8px;
+    padding: 5px;
+  }
+  table tr td i {
+    font-size: 5px;
+  }
+}
 .card__item {
   color: #F7F5F7;
   background-color: #00874e;
