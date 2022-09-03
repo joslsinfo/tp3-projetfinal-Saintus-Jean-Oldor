@@ -456,6 +456,7 @@ label {
 }
 .card__social i {
   color: #fc833c;
+  margin-left: 10px;
 }
 
 table {
@@ -469,6 +470,11 @@ table i {
   padding: 0 !important;
 }
 
+@media screen and (max-width: 768px) {
+  .card__social i {
+    margin-left: 5px;
+  }
+}
 .card__item {
   color: #F7F5F7;
   background-color: #00874e;

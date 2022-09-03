@@ -50,6 +50,7 @@
   font-size: 12px;
   i{
     color: variables.$color-orange;
+    margin-left: 10px;
 
 
   }
@@ -71,3 +72,13 @@
   .card-body{
     padding: 0!important;
   }
+
+  @media screen and (max-width: 768px) {
+    .card__social i{
+      margin-left: 5px;
+    }
+  
+   
+  
+  }
+  
