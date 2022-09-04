@@ -8,20 +8,21 @@
   <meta name="description" content="Page d'accueil du site web multi pages responsive JOS-COWORKING et en PWA">
   <title>Accueil </title>
   <link rel="shorcut icon" href="logofavicon-jos-coworking-black-bg.png">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="manifest" href="manifest.json">
-    <!-- <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png"> -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#f7f5f7">
-	<meta name="apple-mobile-web-app-title" content="JOS-COWORKINGPWA">
-	<link rel="apple-touch-icon" href="/images/icons/icon-192x192.png">
-	<link rel="apple-touch-icon" href="/images/icons/icon-180x180.png">
+  <link rel="manifest" href="manifest.json">
+  <!-- <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png"> -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#f7f5f7">
+  <meta name="apple-mobile-web-app-title" content="JOS-COWORKINGPWA">
+  <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="/images/icons/icon-180x180.png">
   <meta name="theme-color" content="#333333" />
-	<!-- <meta name="description" content="Ceci est le site de JOS-COWORKING en PWA"> -->
+  <!-- <meta name="description" content="Ceci est le site de JOS-COWORKING en PWA"> -->
 
   <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
 </head>
@@ -31,7 +32,8 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand btnLogo-disable"  href="index.html"><img src="./images/jos-coworking-black-bg.png" alt="logo">
+        <a class="navbar-brand btnLogo-disable" href="index.html"><img src="./images/jos-coworking-black-bg.png"
+            alt="logo">
           <!-- <h1 class="nav__title">JOS-COWORKING</h1> -->
         </a>
 
@@ -42,9 +44,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><button class="nav-link px-lg-4 px-2" id="btnInstall"
-              aria-label="Install" hidden>Installer la PWA</button>
-              </li>
+            <li class="nav-item"><button class="nav-link px-lg-4 px-2" id="btnInstall" aria-label="Install"
+                hidden>Installer la PWA</button>
+            </li>
 
             <li class="nav-item">
               <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Accueil</a>
@@ -69,21 +71,21 @@
     </nav>
 
 
-<!-- ======================================= -->
-<script>
-  //  Register service worker.
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('service-worker.js')
-        .then((reg) => {
-          console.log('Service worker registered. Notre service worker est chargé !', reg);
+    <!-- ======================================= -->
+    <script>
+      //  Register service worker.
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('service-worker.js')
+            .then((reg) => {
+              console.log('Service worker registered. Notre service worker est chargé !', reg);
+            });
         });
-    });
-  }
-</script>
-<!-- ======================================= -->
+      }
+    </script>
+    <!-- ======================================= -->
 
-</header>
+  </header>
 
 
 
@@ -100,7 +102,8 @@
     <section>
       <div class="container">
         <h1 class="title">JOS-COWORKING</h1>
-        <p class="slogan">Situé au centre ville de Laval, <br> <strong>JOS-COWORKING</strong>, l’endroit idéal pour trouver un espace de travail pour travailler en toute tranquillité avec vos collaborateurs ! </p>
+        <p class="slogan">Situé au centre ville de Laval, <br> <strong>JOS-COWORKING</strong>, l’endroit idéal pour
+          trouver un espace de travail pour travailler en toute tranquillité avec vos collaborateurs ! </p>
         <hr>
         <div class="row">
           <div class=" col-sm-12 col-md-6 col-lg-6 d-lg-none d-xl-block col-lg-12 col-xl-6">
@@ -121,7 +124,7 @@
 
             <div>
 
-              <img class="img-card img-fluid" src="./images/img-flower.png"  alt="une image">
+              <img class="img-card img-fluid" src="./images/img-flower.png" alt="une image">
 
             </div>
 
@@ -129,22 +132,22 @@
           </div>
 
           <div class="d-none d-sm-block col-sm-12 col-md-6 col-lg-12  col-xl-6">
-           
+
 
 
 
 
             <div class="card-group mt-3">
               <div class="card card-img">
-                <img src="./images/coworkers.jpg" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/coworkers.jpg" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
               <div class="card card-img">
-                <img src="./images/img5.JPG" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/img5.JPG" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
               <div class="card card-img">
-                <img src="./images/img4.JPG" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/img4.JPG" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
 
@@ -153,15 +156,15 @@
 
             <div class="card-group">
               <div class="card card-img">
-                <img src="./images/img13.JPG" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/img13.JPG" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
               <div class="card card-img">
-                <img src="./images/img14.JPG" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/img14.JPG" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
               <div class="card card-img">
-                <img src="./images/img24.JPG" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/img24.JPG" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
 
@@ -173,11 +176,11 @@
 
               </div>
               <div class="card card-img">
-                <img src="./images/img16.PNG" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/img16.PNG" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
               <div class="card card-img">
-                <img src="./images/img15.JPG" class="card-img-top img-fluid"  alt="image coworker">
+                <img src="./images/img15.JPG" class="card-img-top img-fluid" alt="image coworker">
 
               </div>
 
@@ -218,7 +221,8 @@
 
         </div>
         <div class="container">
-          <span class="btn-text">Visitez notre listing pour explorer plus d'espaces <i class="fa-solid fa-chevron-right"></i>
+          <span class="btn-text">Visitez notre listing pour explorer plus d'espaces <i
+              class="fa-solid fa-chevron-right"></i>
             <a class="btn btn-success btn-link" href="liste.html">Explorer plus</a>
           </span>
 
@@ -233,7 +237,7 @@
       <div class="container">
         <div class="row">
           <div class=" col-sm-12 col-md-6 col-xl-6">
-         
+
             <h2 class="row__title">Avec tous les éléments essentiels du coworking pris en en charge</h2>
             <div class="card">
 
@@ -243,21 +247,21 @@
           <div class=" col-sm-12 col-md-6 col-xl-6">
             <P>Vous aurez à votre disposition tous ces éléments cités ci-dessous :</P>
             <span class="para"> <i class="fa-solid fa-wifi"></i> <span class="text-title">Wi-Fi haut débit</span></span>
-      
-        
+
+
 
             <p> Internet haut débit sans coupure
             </p>
             <span class="para"><i class="fa-solid fa-coffee"></i> <span class="text-title">Thé/café toute la
                 journée</span> </span>
 
-    
+
 
             <p> Autant de café et de thé que vous voulez durant toute la journée
             </p>
             <span class="para"><i class="fa-solid fa-chair"></i> <span class="text-title"> Zone d'évasion </span>
             </span>
-     
+
 
             <p>Vous pouvez travailler depuis n'importe quel coin sans interruption
             </p>
@@ -268,7 +272,7 @@
       </div>
     </section>
 
-    
+
 
     <section>
       <div class="container">
@@ -347,7 +351,7 @@
 
             <div class="d-none d-sm-block  col-md-9">
               <div class="card__commentaires">
-           
+
                 <span> Commentaires </span> <span> <i class="fa-solid fa-arrow-left"></i> <i
                     class="fa-solid fa-arrow-right"></i></span>
               </div>
@@ -406,7 +410,9 @@
   </footer>
 
   <!-- <script src="bootstrap-5.2.0/dist/js/bootstrap.bundle.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
   <script src="js/validation.js"></script>
   <script src="js/checklist.js"></script>
   <script src="js/install.js"></script>

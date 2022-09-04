@@ -28,11 +28,35 @@ const FILES_TO_CACHE = [
     'images/image-coworkers.jpg',
     'images/image-co-workers2p.jpg',
     'images/image-card1.jpg',
-    'images/image-coworkers.jpg',
     'images/img-coworker11.jpg',
     'images/coworker.jpg',
     'images/img-coworker2222.jpg',
-    'images/jos-coworking-black-bg.png'
+    'images/img8.JPG',
+    'images/img-coworker21.jpg',
+    'images/img-coworker16.jpg',
+    'images/img-coworker27.PNG',
+    'images/img-espace-partage.JPG',
+    'images/img-coworker37.JPG',
+    'images/img-coworker20.jpg',
+    'images/img6.JPG',
+    'images/img-details.png',
+    'images/image2.png',
+    'images/img-details3.png',
+    'images/img-coworker34.png',
+    'images/image3.png',
+    'images/img-coworker14.jpg',
+    'images/img-details2.png',
+    'images/img-details4.png',
+    'images/img-bureauprive.png',
+    'images/img-bureaudedie.png',
+    'images/img-bureauvirtuel.png',
+    'images/img-salledereunion.png',
+    'images/image5.png',
+    'images/img-bureaudedie2.png',
+    'images/img-bureauvirtuel2.png',
+    'images/img-coworker31.JPG'
+ 
+   
    
 
 ];
