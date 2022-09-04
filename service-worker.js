@@ -54,7 +54,8 @@ const FILES_TO_CACHE = [
     'images/image5.png',
     'images/img-bureaudedie2.png',
     'images/img-bureauvirtuel2.png',
-    'images/img-coworker31.JPG'
+    'images/img-coworker31.JPG',
+    'images/img-coworker19.png'
  
    
    
