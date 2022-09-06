@@ -357,7 +357,6 @@ label {
     display: inline-block;
     left: 25%;
     top: 12%;
-    width: 60%;
     background-color: #F7F5F7;
     z-index: 10;
     border: 1px solid #00874e;
@@ -377,7 +376,7 @@ label {
     display: inline-block;
     left: 25%;
     top: 5%;
-    width: 50%;
+    width: 60%;
     background-color: #F7F5F7;
     z-index: 10;
     border: 1px solid #00874e;
@@ -390,6 +389,9 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .form__manage .form__input-control {
+    width: 80%;
   }
   .form__manage #messageTextInput {
     width: 100%;

@@ -32,6 +32,8 @@
   }
 
 
+
+
   
   .form__input-control {
     display: flex;
@@ -149,12 +151,13 @@
          display: inline-block;
           left: 25%;
           top: 12%;
-          width:60%;
+          // width:80%;
           background-color: variables.$color-white;
           z-index: 10;
           border: 1px solid variables.$color-green;
           text-align: left;
         }
+
 
         iframe{
           width:100%;
@@ -179,12 +182,14 @@
          display: inline-block;
           left: 25%;
           top: 5%;
-          width:50%;
+          width:60%;
           background-color: variables.$color-white;
           z-index: 10;
           border: 1px solid variables.$color-green;
           text-align: left;
         }
+
+        
 
         iframe{
           width:100%;
@@ -195,6 +200,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+  
+      .form__input-control {
+        width:80%;
+      }
 
       #messageTextInput {
         width: 100%;
