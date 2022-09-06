@@ -82,7 +82,7 @@
   
   .form__input-control input:focus, textarea:focus {
     outline: 0;
-  
+    color:variables.$color-blue;
     
   }
   
@@ -148,7 +148,7 @@
        
         #form{
           position: absolute;
-         display: inline-block;
+          display: inline-block;
           left: 25%;
           top: 12%;
           // width:80%;
@@ -179,7 +179,7 @@
         
         #form{
           position: absolute;
-         display: inline-block;
+          display: inline-block;
           left: 25%;
           top: 5%;
           width:60%;

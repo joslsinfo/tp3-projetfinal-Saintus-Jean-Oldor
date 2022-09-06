@@ -301,6 +301,7 @@ label {
 
 .form__input-control input:focus, textarea:focus {
   outline: 0;
+  color: #3498db;
 }
 
 .form__input-control.success input {
