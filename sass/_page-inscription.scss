@@ -99,12 +99,9 @@ button.btn{
 .card-header .form-header.active{
     
     box-shadow: inset 1px 1px 2px variables.$color-rgb2,  inset -1px 1px 2px variables.$color-rgb2, inset -1px -1px 2px variables.$color-rgb2, inset 1px -1px 2px variables.$color-rgb2;
- 
     border-color: variables.$color-lighten;
     transition: border-color 0.3s, box-shadow 0.3s;
  
-
-
 }
 
 .card-body{
