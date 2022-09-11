@@ -8,6 +8,7 @@
     background-color: $bg-color;
     padding: $pad;
     margin: $mag;
+   
 }
 
 .card__item{
@@ -17,7 +18,7 @@
 
 .card__item2{
     @include change(variables.$color-white, variables.$color-orange, variables.$pad, variables.$mag);
-    font-size: 8px;
+    font-size: 10px;
    }
 
 
