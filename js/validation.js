@@ -72,7 +72,7 @@ const validateForm = () => {
 
 
       if (phoneValue === "") {
-        setError(phone, "Email is required");
+        setError(phone, "Phone is required");
         noError = false;
       } else if (!isValidPhone(phoneValue)) {
         setError(phone, "Provide a valid phone number like this format: XXX-XXX-XXXX");
